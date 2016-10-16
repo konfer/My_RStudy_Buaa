@@ -1,0 +1,204 @@
+---
+title: "FirstLesson"
+author: "konfer"
+date: "2016???10???15???"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+
+require("ggplot2") 
+update.packa
+ges()
+
+##确定工作???
+getwd()
+
+?lm()
+help("lm")
+
+##例子
+example("plot")
+??plot
+
+#internet search
+RSiteSearch("plot")
+
+
+##文档
+vignette()
+vignette("ggplot2")
+
+help(package="ggplot2")
+
+rivers
+
+#基础数据类型
+number <- 50
+class(number)
+
+logic <- TRUE
+class(logic)
+
+miao <- "cat"
+class(miao)
+
+Kie <- 'c'
+class(Kie)
+
+##复数
+comp1 <- -5 +7i
+class(comp1)
+
+##NA代表数据缺失
+ignorant <- NA
+class(ignorant)
+
+#数据类型的判???
+is.double(5.4)
+is.character(Kie)
+is.complex(comp1)
+
+#数据转换
+i <- as.integer(number)
+class(i)
+c <-"64"
+nc <- as.numeric(c)
+class(nc)   
+
+
+##向量--相当于C、java中一维数???,数据类型相同
+v1 <- c(1,2,3,45,73)
+v2 <- c("china","America")
+v3 <- c("Braze","German")
+v4 <- c(v2,v3)
+
+v5 <- seq(2,100, by=2)
+v5
+
+#重复
+v6 <- rep(3,4) #3重复4???
+v7 <- rep(c(1,2),4)# 1???3重复4???
+v8 <- rep(c(1,2),each=4)
+
+v7
+v8
+
+#检???
+v7[]
+v7[1]
+v7[-2]
+#v7[-2,-4]
+v7+3
+v7+3
+
+#长度
+length(v7)
+v12 <-LETTERS[1:5]
+names(v12)<-c("one","two","three","four","five")
+v12["four"]
+v12[4]
+v12[c(T,F)]
+v12[c(F,T)]
+
+v13 <-c(1,2,3,45,73,31,23)
+
+mean(v13)
+median(v13)
+var(v13)
+sd(v13)
+quantile(v13)
+
+#matrix
+A <- matrix(1:12,nrow=4)
+B <- matrix(1:12,nrow = 4,byrow = T)
+C <- t(B)
+D <- A+B
+A
+B
+C
+D
+A*B
+#对角线
+diag(A%*%C)
+G[2,3]
+G[1,]
+G[,3]
+G[,3:4]
+G[,C(2,4)]
+
+#array
+the.array <- array(1:24,c(3,4,2))
+
+
+#因子
+tech <- factor(c("basic","proficient","advanced","minimal"))
+increase.tech <- factor(tech,levels = c("minimal","basic","proficient","advanced"))
+increase.tech      
+
+#数据框---数据表
+#每一行是一个记录
+
+x<- 10:1
+y <- -4:5
+
+q <- c("Hockey","Football","Baseball","curling","Rugby","Lacrosse","Basketball","Tennis","Cricket","Soccer")     
+
+theDF <- data.frame(x,y,q)
+theDF <- data.frame(First=x,Second=y,Sport=q)
+
+nrow(theDF)
+ncol(theDF)
+str(theDF)
+dim(theDF)
+names(theDF)          
+names(theDF)[3]           
+             
+rownames(theDF)<-c("one","two","three","four","five","six","seven","eight","nine","ten")            
+theDF
+rownames(theDF) <- NULL
+
+head(mtcars)
+tail(mtcars)
+             
+mtcars[,1]
+theDF[,c("First","Sport")]
+             
+theDF$Sport    #返回向量
+theDF["Sport"] #返回数据框
+theDF[["Sport"]]
+             
+attach(theDF)  #进入theDF
+Sport
+             
+detach(theDF)
+
+
+
+
+
+```

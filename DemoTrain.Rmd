@@ -1,0 +1,84 @@
+---
+title: "DemoTrain-D1"
+author: "konfer"
+date: "2016年10月15日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+
+y<-matrix(1:20,nrow = ,ncol = 4)
+y
+
+
+#构建matrix
+cells <- c(1,26,24,68)
+rnames <- c("R1","R2")
+cnames <- c("C1","C2")
+myMatrix <-matrix(cells,nrow = 2,ncol = 2,byrow = TRUE,dimnames = list(rnames,cnames))
+myMatrix
+
+myMatrix <- matrix(cells,nrow = 2,ncol = 2,byrow = FALSE,dimnames = list(rnames,cnames))
+myMatrix
+
+#实战p23
+
+status <- c("Poor","Improved","Excellent","Poor")  
+status <- factor(status,order=TRUE,
+                 levels =c("Poor","Improved","Excellent")
+                   )
+
+
+#P24
+
+patientID <- c(1,2,3,4)
+age <- c(24,34,28,52)
+diabetes <- c("Type1","TYpe2","TYpe1","Type3")
+status <- c("Poor","Improved","Excellent","Poor")
+patientData <- data.frame(patientID,age,diabetes,status)
+patientData
+
+#list--装载对象的容器，元素可以不同
+#向量、矩阵、数组：每个元素类型相同；
+#数据框：每个列中元素类型相同，每列长度一致
+#列表list：长度及列长均可不同
+
+list(1:10)#一个元素
+list1<-list(1,2,3,4,5,6,7,8,9,10)#10个元素
+list(c(3,6,11),1:7,c("c","d"))
+list(theDF,1:10)
+list2<-list(theDF,1:10,list1)
+
+```
+
+
+
+
+
+
+
+

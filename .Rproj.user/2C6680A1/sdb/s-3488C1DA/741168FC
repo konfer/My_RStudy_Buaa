@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"FirstLesson\"\nauthor: \"konfer\"\ndate: \"2016???10???15???\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## R Markdown\n\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\n```{r cars}\nsummary(cars)\n```\n\n## Including Plots\n\nYou can also embed plots, for example:\n\n```{r pressure, echo=FALSE}\nplot(pressure)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\n```{r}\n\nrequire(\"ggplot2\") \nupdate.packa\nges()\n\n##确定工作???\ngetwd()\n\n?lm()\nhelp(\"lm\")\n\n##例子\nexample(\"plot\")\n??plot\n\n#internet search\nRSiteSearch(\"plot\")\n\n\n##文档\nvignette()\nvignette(\"ggplot2\")\n\nhelp(package=\"ggplot2\")\n\nrivers\n\n#基础数据类型\nnumber <- 50\nclass(number)\n\nlogic <- TRUE\nclass(logic)\n\nmiao <- \"cat\"\nclass(miao)\n\nKie <- 'c'\nclass(Kie)\n\n##复数\ncomp1 <- -5 +7i\nclass(comp1)\n\n##NA代表数据缺失\nignorant <- NA\nclass(ignorant)\n\n#数据类型的判???\nis.double(5.4)\nis.character(Kie)\nis.complex(comp1)\n\n#数据转换\ni <- as.integer(number)\nclass(i)\nc <-\"64\"\nnc <- as.numeric(c)\nclass(nc)   \n\n\n##向量--相当于C、java中一维数???,数据类型相同\nv1 <- c(1,2,3,45,73)\nv2 <- c(\"china\",\"America\")\nv3 <- c(\"Braze\",\"German\")\nv4 <- c(v2,v3)\n\nv5 <- seq(2,100, by=2)\nv5\n\n#重复\nv6 <- rep(3,4) #3重复4???\nv7 <- rep(c(1,2),4)# 1???3重复4???\nv8 <- rep(c(1,2),each=4)\n\nv7\nv8\n\n#检???\nv7[]\nv7[1]\nv7[-2]\n#v7[-2,-4]\nv7+3\nv7+3\n\n#长度\nlength(v7)\nv12 <-LETTERS[1:5]\nnames(v12)<-c(\"one\",\"two\",\"three\",\"four\",\"five\")\nv12[\"four\"]\nv12[4]\nv12[c(T,F)]\nv12[c(F,T)]\n\nv13 <-c(1,2,3,45,73,31,23)\n\nmean(v13)\nmedian(v13)\nvar(v13)\nsd(v13)\nquantile(v13)\n\n#matrix\nA <- matrix(1:12,nrow=4)\nB <- matrix(1:12,nrow = 4,byrow = T)\nC <- t(B)\nD <- A+B\nA\nB\nC\nD\nA*B\n#对角线\ndiag(A%*%C)\nG[2,3]\nG[1,]\nG[,3]\nG[,3:4]\nG[,C(2,4)]\n\n#array\nthe.array <- array(1:24,c(3,4,2))\n\n\n#因子\ntech <- factor(c(\"basic\",\"proficient\",\"advanced\",\"minimal\"))\nincrease.tech <- factor(tech,levels = c(\"minimal\",\"basic\",\"proficient\",\"advanced\"))\nincrease.tech      \n\n#数据框---数据表\n#每一行是一个记录\n\nx<- 10:1\ny <- -4:5\n\nq <- c(\"Hockey\",\"Football\",\"Baseball\",\"curling\",\"Rugby\",\"Lacrosse\",\"Basketball\",\"Tennis\",\"Cricket\",\"Soccer\")     \n\ntheDF <- data.frame(x,y,q)\ntheDF <- data.frame(First=x,Second=y,Sport=q)\n\nnrow(theDF)\nncol(theDF)\nstr(theDF)\ndim(theDF)\nnames(theDF)          \nnames(theDF)[3]           \n             \nrownames(theDF)<-c(\"one\",\"two\",\"three\",\"four\",\"five\",\"six\",\"seven\",\"eight\",\"nine\",\"ten\")            \ntheDF\nrownames(theDF) <- NULL\n\nhead(mtcars)\ntail(mtcars)\n             \nmtcars[,1]\ntheDF[,c(\"First\",\"Sport\")]\n             \ntheDF$Sport    #返回向量\ntheDF[\"Sport\"] #返回数据框\ntheDF[[\"Sport\"]]\n             \nattach(theDF)  #进入theDF\nSport\n             \ndetach(theDF)\n\n\n\n\n\n```\n",
+    "created" : 1476495947429.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "831638564",
+    "id" : "741168FC",
+    "lastKnownWriteTime" : 1476520843,
+    "last_content_update" : 1476520843666,
+    "path" : "C:/MyRWorkSpace/My_Study/FirstLesson.Rmd",
+    "project_path" : "FirstLesson.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

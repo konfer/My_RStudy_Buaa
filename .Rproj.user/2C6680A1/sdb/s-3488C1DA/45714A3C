@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"DemoTrain-D1\"\nauthor: \"konfer\"\ndate: \"2016年10月15日\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## R Markdown\n\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\n```{r cars}\nsummary(cars)\n```\n\n## Including Plots\n\nYou can also embed plots, for example:\n\n```{r pressure, echo=FALSE}\nplot(pressure)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\n```{r}\n\ny<-matrix(1:20,nrow = ,ncol = 4)\ny\n\n\n#构建matrix\ncells <- c(1,26,24,68)\nrnames <- c(\"R1\",\"R2\")\ncnames <- c(\"C1\",\"C2\")\nmyMatrix <-matrix(cells,nrow = 2,ncol = 2,byrow = TRUE,dimnames = list(rnames,cnames))\nmyMatrix\n\nmyMatrix <- matrix(cells,nrow = 2,ncol = 2,byrow = FALSE,dimnames = list(rnames,cnames))\nmyMatrix\n\n#实战p23\n\nstatus <- c(\"Poor\",\"Improved\",\"Excellent\",\"Poor\")  \nstatus <- factor(status,order=TRUE,\n                 levels =c(\"Poor\",\"Improved\",\"Excellent\")\n                   )\n\n\n#P24\n\npatientID <- c(1,2,3,4)\nage <- c(24,34,28,52)\ndiabetes <- c(\"Type1\",\"TYpe2\",\"TYpe1\",\"Type3\")\nstatus <- c(\"Poor\",\"Improved\",\"Excellent\",\"Poor\")\npatientData <- data.frame(patientID,age,diabetes,status)\npatientData\n\n#list--装载对象的容器，元素可以不同\n#向量、矩阵、数组：每个元素类型相同；\n#数据框：每个列中元素类型相同，每列长度一致\n#列表list：长度及列长均可不同\n\nlist(1:10)#一个元素\nlist1<-list(1,2,3,4,5,6,7,8,9,10)#10个元素\nlist(c(3,6,11),1:7,c(\"c\",\"d\"))\nlist(theDF,1:10)\nlist2<-list(theDF,1:10,list1)\n\n```\n\n\n\n\n\n\n\n\n",
+    "created" : 1476518004299.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2362058272",
+    "id" : "45714A3C",
+    "lastKnownWriteTime" : 1476522091,
+    "last_content_update" : 1476522091396,
+    "path" : "C:/MyRWorkSpace/My_Study/DemoTrain.Rmd",
+    "project_path" : "DemoTrain.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
